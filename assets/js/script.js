@@ -41,7 +41,7 @@ function nextQuestion() {
   return score = 0+1
   else timerCount = timerCount - 10
   if(i > questions.length - 1)
-  return gameOver.style.display = "block"
+  return endGame()
   else
   return choice1.textContent = questions[i].options[0], choice2.textContent = questions[i].options[1], choice3.textContent = questions[i].options[2], choice4.textContent = questions[i].options[3], questionName.textContent = questions[i].title
 }
@@ -55,7 +55,7 @@ function startTimer() {
   timer = setInterval(function() {
     timerCount--;
     timerElement.textContent = timerCount;
-    if (timerCount === 0) {
+    if (timerCount <= 0) {
       clearInterval(timer)
       endGame()
     }
@@ -63,7 +63,7 @@ function startTimer() {
 }
 
 function endGame() {
-  console.log(score)
+  gameOver.style.display = "block"
 }
 
 
