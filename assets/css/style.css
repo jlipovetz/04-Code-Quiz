@@ -1,0 +1,26 @@
+.card-timer {
+  text-align: right;
+}
+
+.start-button {
+  font-size: 30px;
+}
+
+#quiz {
+  text-align: center;
+}
+
+#home {
+  text-align: center;
+}
+
+#game-over {
+  text-align: center;
+  font-size:  36px;
+}
+
+#highscores {
+  text-align: left;
+  top: 0%;
+  position: fixed
+}
